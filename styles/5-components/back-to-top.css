@@ -1,0 +1,19 @@
+.back-to-top {
+  display: flex;
+  flex-direction: column;
+  width: var(--spacing-12);
+  height: var(--spacing-12);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--rounded-3xl);
+  background: var(--muted);
+
+  color: var(--foreground);
+  font-size: var(--font-xs);
+  line-height: var(--leading-4);
+  text-decoration: none;
+
+  margin-left: auto;
+  position: sticky;
+  bottom: var(--spacing-4);
+}

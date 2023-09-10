@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elemento Video HTML</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <div class="pancake-stack">
+      <header class="header container sticky top-0">
+        <h1 class="header__logo"><a href="/index.html">Codificable</a></h1>
+        <nav class="header__navigation navigation">
+          <ul>
+            <li><a href="/blog/index.html">Blog</a></li>
+            <li><a href="/about-us.html">Sobre nosotros</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="button button--sm">Login</button>
+        </div>
+        <button class="header__menu-icon button button--icon button--outline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M2.66663 8H13.3333M2.66663 4H13.3333M2.66663 12H13.3333"
+              stroke="currentColor"
+              stroke-width="1.33"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </header>
+      <main>
+        <div class="section">
+          <div class="container with__table">
+            <div class="container article_withtable">
+              <div class="article__container">
+                <div style="height: 100px"></div>
+                <aside class="aside sticky top-96">
+                  <ul class="contentslist">
+                    <li><p>En este articulo:</p></li>
+                    <li>
+                      <a class="contentslink link" href="#sub1"
+                        >Introducción al Elemento</a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub2"
+                        >Documentación Técnica</a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub3">Conclusiones</a>
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub4"
+                        >Escucha el resumen del articulo</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+              <article class="article">
+                <header class="article__header">
+                  <div class="article-metadata">
+                    <div class="article-metadata">
+                      <span class="article-metadata__date">24 Agosto 2023</span>
+                      <span class="article-metadata__tag">Principiante</span>
+                    </div>
+                    <div class="author">
+                      <img
+                        src="/assets/images/profile-danielD.jpg"
+                        alt="Daniel David Avatar"
+                        width="986"
+                        height="1280"
+                        class="author__avatar"
+                      />
+                      <div class="author__info">
+                        <strong class="author_name">Daniel David Medina</strong>
+                        <span>Codeable cohort 12</span>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="content">
+                  <h1 id="top">
+                    Un Vistazo al Mundo Multimedia: Elemento <em>video</em> en
+                    HTML
+                  </h1>
+                  <img
+                    src="/assets/images/html-video-player.png"
+                    alt="Photo HTML simbol in a video player"
+                    width="700"
+                    height="329"
+                  />
+                  <blockquote class="content__blockquote blockquote_footer">
+                    <p>
+                      "El lenguaje es una limitación, una prisión. El diseño
+                      permite explorar otros espacios."
+                    </p>
+                    <footer>-Neville Brody</footer>
+                  </blockquote>
+                  <p>
+                    El lenguaje HTML ofrece una diversidad de elementos para
+                    presentar contenido multimedia de manera efectiva. El
+                    elemento esencial para integrar contenido de video en una
+                    página web es el elemento <code>&lt;video&gt;</code>. En
+                    este artículo, exploraremos en profundidad el elemento de
+                    video en HTML, la forma de uso, atributos clave con ejemplos
+                    prácticos y exploraremos la documentación técnica.
+                  </p>
+                  <h2 id="sub1">
+                    Introducción al Elemento <em>&lt;video&gt;</em>
+                  </h2>
+                  <p>
+                    El elemento <code>&lt;video&gt;</code> permite incrustar
+                    videos en una página web sin necesidad de utilizar
+                    complementos o reproductores externos. Con el elemento
+                    video, los desarrolladores web pueden ofrecer contenido de
+                    video de manera accesible y personalizada para sus usuarios.
+                  </p>
+                  <p>
+                    Exploremos algunos elementos de HTML con los que entenderas
+                    lo basico para integrar este elemento HTML en una pagina web
+                  </p>
+                  <h3>Forma de uso</h3>
+                  <p>
+                    La estructura básica de un elemento video es la siguiente:
+                  </p>
+
+                  <pre>  <code>&lt;video src="videofile-path" autoplay poster="posterimage.jpg"&gt;
+  Tu navegador no admite el elemento <code>video</code>
+  &lt;/video&gt;</code></pre>
+
+                  <ul>
+                    <li>
+                      <code>&lt;video&gt;</code> - La etiqueta de apertura
+                    </li>
+                    <li>
+                      <p>
+                        <code>src</code>: El atributo
+                        <code>src</code> especifica la ruta del archivo de video
+                        que se desea a mostrar. Es importante mencionar que
+                        diferentes navegadores admiten diferentes formatos de
+                        video (por ejemplo, MP4, WebM, Ogg), por lo que se
+                        recomienda proporcionar múltiples fuentes de video para
+                        una compatibilidad óptima.
+                      </p>
+                    </li>
+                    <li>
+                      <code>controls</code>: El atributo
+                      <code>controls</code> agrega controles de reproducción al
+                      video, como reproducción, pausa, volumen y barra de
+                      progreso.
+                    </li>
+                  </ul>
+                  <p>
+                    El espacio del contenedor de las etiquetas
+                    <code>&lt;video&gt;</code> y <code>&lt;/video&gt;</code> se
+                    mostrará en blanco si el navegador no admite la etiqueta de
+                    video. Esto proporciona una experiencia degradada para
+                    usuarios con navegadores antiguos o incompatibles.
+                  </p>
+                  <h3>Atributos Adicionales</h3>
+                  <p>
+                    El elemento <code>&lt;video&gt;</code> admite una variedad
+                    de atributos adicionales para personalizar y controlar la
+                    presentación del video. A continuación, se muestran algunos
+                    de los atributos más comunes:
+                  </p>
+                  <h4>Lista ordenada</h4>
+                  <ul>
+                    <li>
+                      width y height: Estos atributos especifican el ancho y la
+                      altura del área de visualización del video en píxeles.
+
+                      <pre>  <code>&lt;video src="videofile-path" width="640" height="360"&gt;
+  El tamaño del reproductor sera 640x360 px
+  &lt;/video&gt;</code></pre>
+                    </li>
+                    <li>
+                      autoplay: Este atributo permite que el video se reproduzca
+                      automáticamente cuando se carga la página.
+
+                      <pre>  <code>&lt;video src="videofile-path" autoplay&gt;
+  Este video iniciara automaticamente cuando cargue la pagina
+  &lt;/video&gt;</code></pre>
+                    </li>
+                    <li>
+                      loop: El atributo loop hace que el video se reproduzca en
+                      un bucle continuo.
+
+                      <pre>  <code>&lt;video src="videofile-path" loop&gt;
+  Este vodeo se reproducira en bucle
+  &lt;/video&gt;</code></pre>
+                    </li>
+                    <li>
+                      poster: El atributo poster especifica una imagen de vista
+                      previa que se muestra antes de que se inicie la
+                      reproducción del video.
+
+                      <pre>  <code>&lt;video src="videofile-path" poster="preview-image-path" &gt;
+  Este video muestra una imagen de vista previa
+  &lt;/video&gt;</code></pre>
+                    </li>
+                  </ul>
+
+                  <h2 id="sub2">Documentación Técnica</h2>
+                  <p>
+                    Para obtener información detallada sobre el elemento video y
+                    sus atributos, puedes consultar la documentación oficial de
+                    HTML5 en el sitio web del World Wide Web Consortium (W3C).
+                    Aquí tienes el enlace:
+                    <a
+                      href="https://html.spec.whatwg.org/multipage/media.html#the-video-element"
+                      >HTML5 Video Element - W3C</a
+                    >
+                  </p>
+
+                  <h2 id="sub3">Conclusiones</h2>
+                  <p>
+                    El elemento video de HTML es una herramienta poderosa para
+                    integrar contenido de video en tus páginas web de manera
+                    accesible y personalizada. Con atributos como
+                    <code>src</code>, <code>controls</code>,
+                    <code>autoplay</code>, y <code>loop</code>, puedes adaptar
+                    la experiencia de video según tus necesidades.
+                  </p>
+
+                  <p>
+                    Recuerda proporcionar múltiples formatos de video para
+                    garantizar la compatibilidad con diferentes navegadores y
+                    dispositivos, y siempre verifica la documentación oficial de
+                    HTML para obtener información actualizada sobre este
+                    elemento.
+                  </p>
+
+                  <p>
+                    ¡Añadir video a tu sitio web puede mejorar
+                    significativamente la experiencia del usuario y la
+                    presentación de contenido!
+                  </p>
+
+                  <h2 id="sub4">Escucha el resumen del articulo</h2>
+                  <div class="article__audio">
+                    <audio
+                      class="article__audio__modify"
+                      src="https://drive.google.com/uc?export=download&id=1ydspB8JmG_jM2n19mkhKcucOqBZuMhLC"
+                      controls=""
+                    >
+                      Tu navegador no soporta la etiqueta audio
+                    </audio>
+                  </div>
+                </div>
+                <a class="back-to-top" href="#top">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M15 12.5L10 7.5L5 12.5"
+                        stroke="#171717"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  top
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container footer">
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="facebook">
+                  <path
+                    id="Vector"
+                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="linkedin">
+                  <path
+                    id="Vector"
+                    d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M6 9H2V21H6V9Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="twitter">
+                  <path
+                    id="Vector"
+                    d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="github">
+                  <path
+                    id="Vector"
+                    d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8.00004 3.5C6.00004 2 5.00004 2 5.00004 2C4.70004 3.15 4.70004 4.35 5.00004 5.5C4.27191 6.51588 3.91851 7.75279 4.00004 9C4.00004 12.5 7.00004 14.5 10 14.5C9.61004 14.99 9.32004 15.55 9.15004 16.15C8.98004 16.75 8.93004 17.38 9.00004 18V22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M9 18C4.49 20 4 16 2 16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <small class="footer__text"
+          >&copy; 2023 Codificable - Todos los derechos reservados</small
+        >
+      </footer>
+    </div>
+  </body>
+</html>

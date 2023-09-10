@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elemento Strong HTML</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <div class="pancake-stack">
+      <header class="header container sticky top-0">
+        <h1 class="header__logo"><a href="/index.html">Codificable</a></h1>
+        <nav class="header__navigation navigation">
+          <ul>
+            <li><a href="/blog/index.html">Blog</a></li>
+            <li><a href="/about-us.html">Sobre nosotros</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="button button--sm">Login</button>
+        </div>
+        <button class="header__menu-icon button button--icon button--outline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M2.66663 8H13.3333M2.66663 4H13.3333M2.66663 12H13.3333"
+              stroke="currentColor"
+              stroke-width="1.33"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </header>
+
+      <main>
+        <div class="section">
+          <div class="container with__table">
+            <div class="container article_withtable">
+              <div class="article__container">
+                <div style="height: 100px"></div>
+                <aside class="aside sticky top-96">
+                  <ul class="contentslist">
+                    <li><p>En este articulo:</p></li>
+                    <li>
+                      <a class="contentslink link" href="#sub1"
+                        >Correcto uso de la etiqueta
+                        <strong>&lt;Iframe&gt;</strong></a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub2"
+                        >Optimización del Rendimiento:</a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub3"
+                        >¡Hora de ponerlo en práctica!</a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub4"
+                        >Audio del Articulo</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+              <article class="article">
+                <header class="article__header">
+                  <div class="article-metadata">
+                    <span class="article-metadata__date">24 Agosto 2023</span>
+                    <span class="article-metadata__tag"
+                      >Estudiante Codable - Cohort 12</span
+                    >
+                  </div>
+                  <div class="author">
+                    <img
+                      src="../assets/images/fernando-profile.jpeg"
+                      alt="Fernando Avatar"
+                      width="116"
+                      height="116"
+                      class="author__avatar"
+                    />
+                    <div class="author__info">
+                      <strong class="author_name">Fernando Aquino Iman</strong>
+                      <span>Codeable Student - Cohort 12</span>
+                    </div>
+                  </div>
+                </header>
+                <div class="content">
+                  <h1 id="top">
+                    Conozcamos más a fondo el elemento &lt;Iframe&gt; de Html
+                  </h1>
+                  <iframe
+                    src="https://www.youtube.com/embed/1KAHbxBqLjA"
+                    width="670"
+                    height="300"
+                    frameborder="0"
+                    scrolling="no"
+                    class="custom-iframe"
+                  ></iframe>
+                  <p>
+                    La etiqueta <code>&lt;Iframe&gt;</code> es una herramienta
+                    poderosa en HTML que permite incrustar contenido externo
+                    dentro de una página web. Desde la inserción de mapas
+                    interactivos hasta la reproducción de videos incrustados,
+                    aprender a utilizar correctamente esta etiqueta es esencial
+                    para ofrecer una experiencia de usuario rica y dinámica. En
+                    este artículo, exploraremos los aspectos clave del uso
+                    adecuado de la etiqueta <code>&lt;Iframe&gt;</code> y cómo
+                    optimizarla para obtener los mejores resultados.
+                  </p>
+                  <h2 id="sub1">
+                    Correcto uso de la etiqueta <strong>&lt;Iframe&gt;</strong>
+                  </h2>
+                  <p>
+                    El uso adecuado de la etiqueta
+                    <code>&lt;Iframe&gt;</code> en el desarrollo web implica
+                    encontrar un equilibrio entre la integración de contenido
+                    externo valioso y la consideración de factores críticos como
+                    la seguridad y el rendimiento del sitio. Al emplear la
+                    etiqueta <code>&lt;Iframe&gt;</code>, es esencial asegurarse
+                    de que el contenido incrustado provenga de fuentes
+                    confiables y seguras para evitar posibles amenazas de
+                    seguridad, como ataques de Cross-Site Scripting (XSS).
+                    Además, optimizar el rendimiento del sitio requiere un
+                    enfoque estratégico, controlando la cantidad de iframes
+                    utilizados y configurando adecuadamente atributos como
+                    loading y sandbox para garantizar una experiencia de usuario
+                    fluida y rápida. La etiqueta
+                    <code>&lt;Iframe&gt;</code>
+                    puede ser una herramienta valiosa para ofrecer contenido
+                    interactivo, pero su implementación debe ser considerada y
+                    guiada por las mejores prácticas para lograr un equilibrio
+                    armonioso entre funcionalidad y seguridad.
+                  </p>
+                  <h2 id="sub2">Optimización del Rendimiento:</h2>
+                  <p>
+                    La utilización de la etiqueta <code>&lt;Iframe&gt;</code> en
+                    el desarrollo web puede tener un impacto significativo en el
+                    rendimiento de un sitio. Si bien los iframes son una
+                    herramienta valiosa para incrustar contenido externo, es
+                    importante comprender cómo su uso puede influir en la
+                    experiencia del usuario y en la velocidad general de la
+                    página.
+                  </p>
+                  <h3>Repercusiones que podrian ocurrir en tu sitio web</h3>
+                  <ul>
+                    <li><strong>Tiempo de Carga y Rendimiento</strong></li>
+                    <li><strong>Interacción del Usuario</strong></li>
+                    <li><strong>Carga Secuencial</strong></li>
+                    <li><strong>Impacto en Dispositivos Móviles</strong></li>
+                    <li><strong>Optimización del Rendimiento</strong></li>
+                  </ul>
+                  <blockquote class="content__blockquote">
+                    <p>
+                      "La información obtenida de <strong>Google</strong> es un
+                      recurso invaluable para la investigación y el aprendizaje
+                      en línea. Sin embargo, es esencial evaluar críticamente y
+                      verificar la precisión de la información antes de
+                      utilizarla en proyectos importantes."
+                    </p>
+                    <footer class="blockquote_footer">
+                      - Consejo de Evaluación de Información
+                    </footer>
+                  </blockquote>
+
+                  <h3>Otras formas de usarlo</h3>
+                  <p>
+                    La etiqueta <code>&lt;iframe&gt;</code> se puede usar de
+                    multiples maneras, como por ejemplo las siguientes.
+                  </p>
+                  <div class="iframes-container">
+                    <div class="frames-section custom-card">
+                      <iframe
+                        class="iframe-width"
+                        src="https://calendar.google.com/calendar/embed?src=tu-direccion%40gmail.com&ctz=America%2FNew_York"
+                      ></iframe>
+                      <iframe
+                        class="iframe-width"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.761061490769!2d-77.07383412413758!3d-11.99102834086711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf93a761f663%3A0xb94a8efc2e3d27e8!2sMegaplaza!5e0!3m2!1ses-419!2spe!4v1692938935335!5m2!1ses-419!2spe"
+                      ></iframe>
+                      <iframe
+                        class="iframe-width"
+                        src="https://docs.google.com/document/d/1R2a7E4V-Rmyrsld17qocdIOg2KSqvUgdM3I9D1ca_NA/edit"
+                      ></iframe>
+                      <iframe
+                        class="iframe-width"
+                        src="https://agarz.com/es"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <h3>Estructura de la etiqueta</h3>
+                  <p>
+                    Para mostrar un video cargado desde otra web en tu página,
+                    utilizamos la etiqueta
+                    <code>&lt;iframe&gt;</code>. Asegúrate de incluir el
+                    atributo <code>src</code> con la URL de la imagen que deseas
+                    mostrar.
+                  </p>
+                  <pre><code>&lt;iframe src="https://youtube.com" alt="Descripcion del video"&gt;</code></pre>
+
+                  <h2 id="sub3">¡Hora de ponerlo en práctica!</h2>
+                  <p>
+                    Los <code>&lt;iframe&gt;</code> son una herramienta poderosa
+                    en el desarrollo web que te permite incorporar contenido
+                    externo directamente en tus páginas. A través de los
+                    iframes, puedes mostrar contenido como mapas interactivos,
+                    videos, documentos incrustados y más, sin tener que
+                    redirigir a los usuarios a otras páginas. Veamos cómo puedes
+                    sacar el máximo provecho de los iframes en tu sitio web y
+                    cómo pueden enriquecer la experiencia del usuario.
+                  </p>
+                  <h2 id="sub4">Audio del Articulo</h2>
+                  <p>
+                    Acontinuación un audio acerca del articulo creado
+                    <strong><code>&lt;iframe&gt;</code></strong>
+                  </p>
+                </div>
+                <div class="article__audio">
+                  <audio
+                    class="article__audio__modify"
+                    src="https://drive.google.com/uc?id=18zIhOntY7Sjws45EFUxZzmbwSfr6kRwZ"
+                    controls=""
+                  >
+                    Tu navegador no soporta la etiqueta audio
+                  </audio>
+                </div>
+                <a class="back-to-top" href="#top">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M15 12.5L10 7.5L5 12.5"
+                        stroke="#171717"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  top
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container footer">
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="facebook">
+                  <path
+                    id="Vector"
+                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="linkedin">
+                  <path
+                    id="Vector"
+                    d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M6 9H2V21H6V9Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="twitter">
+                  <path
+                    id="Vector"
+                    d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="github">
+                  <path
+                    id="Vector"
+                    d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8.00004 3.5C6.00004 2 5.00004 2 5.00004 2C4.70004 3.15 4.70004 4.35 5.00004 5.5C4.27191 6.51588 3.91851 7.75279 4.00004 9C4.00004 12.5 7.00004 14.5 10 14.5C9.61004 14.99 9.32004 15.55 9.15004 16.15C8.98004 16.75 8.93004 17.38 9.00004 18V22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M9 18C4.49 20 4 16 2 16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <small class="footer__text"
+          >&copy; 2023 Codificable - Todos los derechos reservados</small
+        >
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding: 0;
+  width: fit-content;
+  display: flex;
+  height: 16px;
+  flex-wrap: wrap;
+  gap: 1em 40px;
+}
+
+.social-links a {
+  color: var(--muted-foreground-subtle);
+}
+
+.social-links a:hover {
+  color: var(--muted-foreground);
+}
+
+.social-links--small {
+  gap: var(--spacing-6);
+    align-items: flex-start;
+  align-content: flex-start;
+}
+
+.social-links--small a {
+  border: 2px;
+  height: 16px;
+}

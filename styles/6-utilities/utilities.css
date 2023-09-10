@@ -1,0 +1,14 @@
+/* Width utilities */
+.full-width {
+  width: 100% !important;
+}
+.sticky {
+  position: sticky;
+} 
+.top-0 {
+  top: 0px;
+  z-index: 1000;
+}
+.top-96 {
+  top: 96px;
+}

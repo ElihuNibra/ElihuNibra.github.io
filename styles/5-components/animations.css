@@ -1,0 +1,35 @@
+
+
+/* Opacidad */
+@keyframes opacity__animation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Flotar */
+
+@keyframes flotar__animation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Sube la imagen */
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Desplazamiento */
+
+@keyframes desplazamiento__animation{
+  from{
+    transform: translateX(-150%);
+  }to{
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,46 @@
+/* Blockquote */
+.content__blockquote {
+    background-color: var(--neutral-400);
+    color: var(--neutral-950);
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+  } 
+  .blockquote_footer{
+    text-align: left;
+  }
+  
+/* audio */
+.article__audio {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .article__audio > *{
+    display: inline-block;
+  }
+  
+  .article__audio__title {
+    color: var(--primary-active);
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem; 
+  }
+  .article__audio__title::before,
+  .article__audio__title::after {
+    content: "*";
+  }
+
+  #text__time {
+    color: rgb(83, 233, 83);
+  }
+  
+  #text__datatime {
+    color: rgb(240, 120, 120);
+  }
+  
+  #text__date {
+    color: aqua;
+  }

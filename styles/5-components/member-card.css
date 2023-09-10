@@ -1,0 +1,48 @@
+.member-card__section {
+padding: var(--spacing-24) 0rem;
+}
+
+.member-card__container {
+max-width: var(--width-7xl);
+padding-inline: var(--spacing-4);
+margin-inline: auto;
+}
+
+.member-card__header {
+  max-width: var(--width-2xl);
+  margin-inline: auto;
+
+  text-align: center;
+  margin-bottom: var(--spacing-16);
+}
+
+.member-card__title {
+  font-family: var(--display);
+  font-size: var(--font-4xl);
+  font-weight: 600;
+  line-height: var(--leading-none);
+
+  margin-bottom: var(--spacing-6);
+}
+
+.member-card__lead {
+  color: var(--muted-foreground);
+  font-size: var(--font-lg);
+  line-height: var(--leading-8);
+}
+
+@media (min-width: 40rem) {
+  .about__paragraph-container {
+    flex-flow: nowrap;
+  }
+
+  .member-card__container {
+  padding-inline: var(--spacing-6);
+}
+}
+
+@media (min-width: 64rem) {
+    .member-card__container {
+  padding-inline: var(--spacing-8);
+}
+}

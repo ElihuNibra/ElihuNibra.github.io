@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorando el elemento &lt;video&gt; de HTML</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <div class="pancake-stack">
+      <header class="header container sticky top-0">
+        <h1 class="header__logo"><a href="/index.html">Codificable</a></h1>
+        <nav class="header__navigation navigation">
+          <ul>
+            <li><a href="/blog/index.html">Blog</a></li>
+            <li><a href="/about-us.html">Sobre nosotros</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="button button--sm">Login</button>
+        </div>
+        <button class="header__menu-icon button button--icon button--outline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M2.66663 8H13.3333M2.66663 4H13.3333M2.66663 12H13.3333"
+              stroke="currentColor"
+              stroke-width="1.33"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </header>
+
+      <main>
+        <div class="section">
+          <div class="container with__table">
+            <div class="container article_withtable">
+              <div class="article__container">
+                <div style="height: 100px"></div>
+                <aside class="aside sticky top-96">
+                  <ul class="contentslist">
+                    <li><p>En este articulo:</p></li>
+                    <li>
+                      <a class="contentslink link" href="#sub1"
+                        >Profundizando en el elemento &lt;video&gt; de HTML</a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub2"
+                        >Ventajas destacadas de emplear el elemento
+                        &lt;video&gt;</a
+                      >
+                    </li>
+                    <li>
+                      <a class="contentslink link" href="#sub3"
+                        >¿Como integrar un video en mi sitio web?</a
+                      >
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+              <article class="article">
+                <header class="article__header">
+                  <div class="article-metadata">
+                    <span class="article-metadata__date">24 Agosto 2023</span>
+                    <span class="article-metadata__tag">Junior</span>
+                  </div>
+                  <div class="author">
+                    <img
+                      src="/assets/images/profile4.jpg"
+                      alt="Elihú Nibra Avatar"
+                      width="640"
+                      height="640"
+                      class="author__avatar"
+                    />
+                    <div class="author__info">
+                      <strong class="author_name">Elihú Nibra</strong>
+                      <span>Full-Stack Developer - DevOS</span>
+                    </div>
+                  </div>
+                </header>
+                <div class="content">
+                  <h1 id="top">Explorando el elemento &lt;video&gt; de HTML</h1>
+                  <img
+                    src="/assets/images/bg-video.jpg"
+                    alt="media-content"
+                    width="1920"
+                    height="900"
+                  />
+                  <p>
+                    En la era digital actual, donde el contenido multimedia
+                    domina la atención en línea, el elemento &lt;video&gt; de
+                    HTML emerge como una herramienta fundamental para la
+                    presentación efectiva de contenido audiovisual en sitios
+                    web...
+                  </p>
+
+                  <h2 id="sub1">
+                    Profundizando en el elemento &lt;video&gt; de HTML
+                  </h2>
+                  <p>
+                    El elemento &lt;video&gt; es una etiqueta HTML5 que
+                    posibilita la inclusión y reproducción de contenido de video
+                    dentro de una página web, sin depender de plugins externos.
+                    Su sencillez de uso y su amplia compatibilidad lo convierten
+                    en la elección predilecta para integrar material de video en
+                    sitios web modernos...
+                  </p>
+
+                  <h2 id="sub2">
+                    Ventajas destacadas de emplear el elemento &lt;video&gt;
+                  </h2>
+                  <ol>
+                    <li>
+                      <strong>Compatibilidad amplia:</strong> El elemento
+                      &lt;video&gt; es compatible con todos los navegadores web
+                      principales y dispositivos modernos, asegurando que tus
+                      videos sean accesibles y visibles sin contratiempos en
+                      diversas plataformas.
+                    </li>
+                    <li>
+                      <strong>Control de reproducción avanzado:</strong> Ofrece
+                      un control completo sobre la reproducción de los videos.
+                      Los usuarios pueden pausar, reproducir, adelantar y
+                      rebobinar, permitiéndoles explorar el contenido a su
+                      propio ritmo y preferencia.
+                    </li>
+                    <li>
+                      <strong>Personalización visual:</strong> El diseño del
+                      reproductor de video puede personalizarse utilizando CSS
+                      para que se ajuste estéticamente al estilo general de tu
+                      sitio web. Esto crea una experiencia de usuario cohesiva y
+                      agradable.
+                    </li>
+                    <li>
+                      <strong>Compatibilidad con múltiples formatos:</strong> El
+                      elemento &lt;video&gt; es compatible con varios formatos
+                      de video, como MP4, WebM y Ogg. Esta versatilidad permite
+                      seleccionar el formato óptimo según las necesidades del
+                      sitio y las consideraciones de compatibilidad.
+                    </li>
+                  </ol>
+
+                  <h2 id="sub3">¿Como integrar un video en mi sitio web?</h2>
+                  <p>
+                    Bueno, hacerlo resulta bastante sencillo entendiendo como
+                    funciona, a continuacion puedes ver la linea de codigo a
+                    emplear y una explicaion detallada sobre los elemntos que la
+                    componen
+                  </p>
+                  <pre><code>&lt;video controls width="800" height="450"&gt;
+    &lt;source src="mi-video.mp4" type="video/mp4"&gt;
+    &lt;source src="mi-video.webm" type="video/webm"&gt;
+    Tu navegador no admite el elemento de video en HTML5.
+&lt;/video&gt;</code></pre>
+
+                  <h3>En este ejemplo:</h3>
+                  <ul>
+                    <li>
+                      El atributo <code>controls</code> agrega controles de
+                      reproducción al reproductor de video.
+                    </li>
+                    <li>
+                      Los atributos <code>width</code> y
+                      <code>height</code> permiten definir las dimensiones del
+                      reproductor.
+                    </li>
+                    <li>
+                      Los elementos <code>&lt;source&gt;</code> dentro del
+                      <code>&lt;video&gt;</code> especifican las URL de los
+                      archivos de video en diferentes formatos y tipos MIME, lo
+                      que asegura una mayor compatibilidad entre navegadores.
+                    </li>
+                  </ul>
+                  <br />
+                  <blockquote class="content__blockquote">
+                    <em
+                      ><strong
+                        >"Indicar los valores de ancho y alto en el HTML es una
+                        buena práctica, porque reservamos el tamaño inicialmente
+                        aunque el video no se haya descargado, y así evitamos
+                        posibles saltos o cambios de tamaño que desembocan en
+                        comportamientos molestos e inesperados al cargar una
+                        web."</strong
+                      ></em
+                    >
+                  </blockquote>
+                  <br />
+                  <p>
+                    Y listo, asi de facil habras logrado integrar corectamente
+                    videos a tu sitio web.
+                  </p>
+                  <video controls width="640" height="360">
+                    <source src="/assets/videos/video.mp4" type="video/mp4" />
+                    Tu navegador no admite el elemento de video en HTML5.
+                  </video>
+                  <p>
+                    El conclusion,estamos ante un elemento que ha revolucionado
+                    significativamente la forma en que compartimos información
+                    en la web. La creación de contenido multimedia atractivo y
+                    de alta calidad es fundamental para mantener a los
+                    visitantes comprometidos y satisfechos. A medida que la
+                    tecnología y las técnicas de diseño evolucionan, el elemento
+                    &lt;video&gt; se convierte en una herramienta aún más
+                    versátil y emocionante. Mantén tus dedos en el pulso de la
+                    innovación tecnológica y experimenta con nuevas formas de
+                    utilizar este elemento para sorprender y cautivar a tu
+                    audiencia. Aprovecha esta herramienta, experimenta con su
+                    potencial y dale vida a tu contenido. El futuro de la
+                    comunicación en línea está en constante evolución, y este
+                    elemento HTML es tu pasaporte para navegar en ese
+                    emocionante viaje.
+                  </p>
+                  <p>
+                    ¿Deseas aprender aun mas sobre este tema, puedes escuchar el
+                    interesante Podcast creado por nuestros editores que se
+                    encuentra a continuacion, asi como hallar mas informacion en
+                    el siguiente:
+                    <a
+                      href="https://lenguajehtml.com/html/multimedia/etiqueta-html-video/"
+                      target="_blank"
+                      rel="noopener"
+                      rel="nofollow"
+                      >articulo</a
+                    >
+                  </p>
+                </div>
+                <div class="article__audio">
+                  <span class="article__audio__title">
+                    ¡Escucha un podcast relacionado al tema!
+                  </span>
+                  <audio
+                    class="article__audio__modify"
+                    src="https://docs.google.com/uc?export=download&id=1JOjvLyTfQJUA_BQ_LvgVYcJynPl6JV1m"
+                    controls=""
+                  >
+                    Tu navegador no soporta la etiqueta audio
+                  </audio>
+                </div>
+                <a class="back-to-top" href="#top">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Frame">
+                      <path
+                        id="Vector"
+                        d="M15 12.5L10 7.5L5 12.5"
+                        stroke="#171717"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  top
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container footer">
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="facebook">
+                  <path
+                    id="Vector"
+                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="linkedin">
+                  <path
+                    id="Vector"
+                    d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M6 9H2V21H6V9Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="twitter">
+                  <path
+                    id="Vector"
+                    d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/" target="_blank">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="github">
+                  <path
+                    id="Vector"
+                    d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8.00004 3.5C6.00004 2 5.00004 2 5.00004 2C4.70004 3.15 4.70004 4.35 5.00004 5.5C4.27191 6.51588 3.91851 7.75279 4.00004 9C4.00004 12.5 7.00004 14.5 10 14.5C9.61004 14.99 9.32004 15.55 9.15004 16.15C8.98004 16.75 8.93004 17.38 9.00004 18V22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M9 18C4.49 20 4 16 2 16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <small class="footer__text"
+          >&copy; 2023 Codificable - Todos los derechos reservados</small
+        >
+      </footer>
+    </div>
+  </body>
+</html>
